@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matrix Reveal Final Corrected</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: monospace;
+      color: lime;
+      font-size: 20px;
+      overflow: hidden;
+      padding: 0 10px;
+    }
+
+    .terminal::after {
+      content: "Initializing system scan...";
+      animation: hackLines 9s steps(1, end) forwards;
+      white-space: pre;
+      display: block;
+      text-align: center;
+    }
+
+    @keyframes hackLines {
+      0% { content: "Initializing system scan..."; }
+      10% { content: "Connecting to remote host..."; }
+      20% { content: "Bypassing security..."; }
+      30% { content: "Access granted."; }
+      40% { content: "Uploading payload..."; }
+      50% { content: "Payload executed."; }
+      60% { content: "Encrypting files..."; }
+      70% { content: "Stealing data..."; }
+      80% { content: "!!! SYSTEM BREACH DETECTED !!!"; color: red; }
+      90% { content: "!!! YOU HAVE BEEN HACKED !!!"; color: red; font-size: 32px; }
+      100% { content: "!!! YOU HAVE BEEN HACKED !!!"; color: red; font-size: 32px; }
+    }
+
+    .matrix-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 20px;
+      justify-content: center;
+      max-width: 90%;
+      text-align: center;
+      opacity: 0;
+      animation: revealMatrix 0.3s forwards;
+      animation-delay: 9.4s;
+    }
+
+    @keyframes revealMatrix {
+      to { opacity: 1; }
+    }
+
+    .char {
+      opacity: 0;
+      color: #00ff00;
+      font-size: 28px;
+      filter: blur(1px);
+      text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+      animation: appear 0.4s forwards;
+    }
+
+    .credit {
+      opacity: 0;
+      font-size: 16px;
+      color: #00ff00;
+      margin-top: 10px;
+      animation: appear 0.4s forwards;
+      animation-delay: 15s;
+      text-shadow: 0 0 5px #0f0;
+    }
+
+    @keyframes appear {
+      to { opacity: 1; filter: blur(0); }
+    }
+
+    /* Delay each char */
+    .char:nth-child(1) { animation-delay: 9.4s; }
+    .char:nth-child(2) { animation-delay: 9.6s; }
+    .char:nth-child(3) { animation-delay: 9.8s; }
+    .char:nth-child(4) { animation-delay: 10.0s; }
+    .char:nth-child(5) { animation-delay: 10.2s; }
+    .char:nth-child(6) { animation-delay: 10.4s; }
+    .char:nth-child(7) { animation-delay: 10.6s; }
+    .char:nth-child(8) { animation-delay: 10.8s; }
+    .char:nth-child(9) { animation-delay: 11.0s; }
+    .char:nth-child(10) { animation-delay: 11.2s; }
+    .char:nth-child(11) { animation-delay: 11.4s; }
+    .char:nth-child(12) { animation-delay: 11.6s; }
+    .char:nth-child(13) { animation-delay: 11.8s; }
+    .char:nth-child(14) { animation-delay: 12.0s; }
+    .char:nth-child(15) { animation-delay: 12.2s; }
+    .char:nth-child(16) { animation-delay: 12.4s; }
+    .char:nth-child(17) { animation-delay: 12.6s; }
+    .char:nth-child(18) { animation-delay: 12.8s; }
+    .char:nth-child(19) { animation-delay: 13.0s; }
+    .char:nth-child(20) { animation-delay: 13.2s; }
+    .char:nth-child(21) { animation-delay: 13.4s; }
+    .char:nth-child(22) { animation-delay: 13.6s; }
+    .char:nth-child(23) { animation-delay: 13.8s; }
+    .char:nth-child(24) { animation-delay: 14.0s; }
+    .char:nth-child(25) { animation-delay: 14.2s; }
+    .char:nth-child(26) { animation-delay: 14.4s; }
+  </style>
+</head>
+<body>
+  <div class="terminal"></div>
+  <div class="matrix-container">
+    <span class="char">I</span>
+    <span class="char">'</span>
+    <span class="char">M</span>
+    <span class="char">&nbsp;</span>
+    <span class="char">W</span>
+    <span class="char">A</span>
+    <span class="char">T</span>
+    <span class="char">C</span>
+    <span class="char">H</span>
+    <span class="char">I</span>
+    <span class="char">N</span>
+    <span class="char">G</span>
+    <span class="char">&nbsp;</span>
+    <span class="char">Y</span>
+    <span class="char">O</span>
+    <span class="char">U</span>
+    <span class="char">.</span>
+    <span class="char">&nbsp;</span>
+    <span class="char">T</span>
+    <span class="char">H</span>
+    <span class="char">A</span>
+    <span class="char">N</span>
+    <span class="char">K</span>
+    <span class="char">&nbsp;</span>
+    <span class="char">Y</span>
+    <span class="char">O</span>
+    <span class="char">U</span>
+  </div>
+  <div class="credit">by - Amanz</div>
+</body>
+</html>

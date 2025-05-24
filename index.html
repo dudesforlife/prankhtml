@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML PRANK: REPAIR RECEIPT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0d0d0d;
+      color: #00ffcc;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .glitch {
+      font-size: 3rem;
+      color: #fff;
+      position: relative;
+      animation: glitch 1s infinite;
+    }
+
+    .glitch::before, .glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+    }
+
+    .glitch::before {
+      animation: glitchTop 1s infinite;
+      color: #ff00ff;
+    }
+
+    .glitch::after {
+      animation: glitchBottom 1s infinite;
+      color: #00ffff;
+    }
+
+    @keyframes glitchTop {
+      0% { top: -2px; left: 2px; }
+      20% { top: -3px; left: -2px; }
+      40% { top: 2px; left: 2px; }
+      60% { top: 1px; left: -1px; }
+      100% { top: -2px; left: 2px; }
+    }
+
+    @keyframes glitchBottom {
+      0% { top: 2px; left: -2px; }
+      20% { top: 1px; left: 2px; }
+      40% { top: -2px; left: -2px; }
+      60% { top: 1px; left: 1px; }
+      100% { top: 2px; left: -2px; }
+    }
+
+    .preview-box {
+      background: #111;
+      padding: 20px;
+      border: 1px solid #00ffcc;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .preview-img {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    .buy-button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #00ffcc;
+      color: #000;
+      padding: 10px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .buy-button:hover {
+      background: #00ffaa;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="glitch" data-text="HTML PRANK">HTML PRANK</h1>
+    <p class="subtitle">Buat kawan kau panik dengan resit palsu - tapi nampak real!</p>
+
+    <div class="preview-box">
+      <h2>PRANK: Fake Repair Receipt</h2>
+      <p>Fail ini akan tunjukkan satu resit servis peranti dengan jumlah ratusan ringgit. Sesuai untuk prank kekasih, bos, atau kawan.</p>
+      <img src="preview.png" alt="preview prank" class="preview-img"/>
+      <p class="price">Harga: <strong>RM3.00 sahaja</strong></p>
+      <a href="https://toyyibpay.com/your-prank-bill" class="buy-button">Beli Sekarang</a>
+    </div>
+
+    <footer>
+      <p>Selepas pembayaran, anda akan dibawa ke halaman muat turun.</p>
+    </footer>
+  </div>
+</body>
+</html>
